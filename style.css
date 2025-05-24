@@ -1,0 +1,205 @@
+/* Reset and base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+  background-color: #10002b;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+header {
+  background: #3c096c;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #c77dff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #c77dff;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(to bottom, #240046, #3c096c);
+  animation: fadeIn 2s ease-in;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #c77dff;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+/* Section */
+.section {
+  padding: 4rem 2rem;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #c77dff;
+  padding-left: 1rem;
+}
+
+/* Skills */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skill {
+  background: #5a189a;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #c77dff33;
+  transition: transform 0.3s ease;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+}
+
+/* Projects */
+.project-card {
+  background: #3c096c;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #c77dff;
+  box-shadow: 0 0 10px #c77dff33;
+  border-radius: 10px;
+}
+.socials {
+  margin-top: 2rem;
+}
+
+.socials h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #c77dff;
+  padding-left: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.social-link {
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #6a0dad;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: #c77dff;
+  color: #1a1a1a;
+}
+.social
+
+.github   { background-color: #333; }
+.linkedin { background-color: #0077b5; }
+.leetcode { background-color: #f89f1b; color: #000; }
+.instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%); color: #fff; }
+.YouTube {background-color: rgb(175, 14, 14);}
+
+/* Footer */
+footer {
+  background: #240046;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #a0a0a0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.nav-btn{
+    /* background: transparent;
+  border: none;
+  font-size: 1.1rem;
+  color:#5a189a;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 18px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative; */
+  background: #b975ec;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #c77dff33;
+  transition: transform 0.3s ease;
+  color: #ffffff;
+}
+div button:hover, div button.active {
+  background: #5a189a;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 15px var(--shadow);
+}
+.nav-btn:hover {
+  transform: scale(1.1);
+  font-weight: bolder;
+}
