@@ -203,6 +203,7 @@ div button:hover, div button.active {
   transform: scale(1.1);
   font-weight: bolder;
 }
+
 /* Default (Desktop First) */
 body {
   font-size: 18px;
